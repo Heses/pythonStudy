@@ -1,6 +1,6 @@
 #387p
 class Car: #클래스 생성
-    name=""
+    name="" #필드 : 인스턴스 변수
     speed=0
 
     def __init__(self, name, speed): #생성자 생성
