@@ -2,6 +2,7 @@
 #Multi Thread : 여러 개의 스레드를 작동하는 것
 
 import time
+import threading
 
 class RaceCar:
     carname=''
@@ -18,6 +19,10 @@ car1=RaceCar('자동차1')
 car2=RaceCar('자동차2')
 car3=RaceCar('자동차3')
 
-car1.runcar()
-car2.runcar()
-car3.runcar()
+th1=threading.Thread(target=car1.runcar)
+th2=threading.Thread(target=car2.runcar)
+th3=threading.Thread(target=car3.runcar)
+
+th1.start()
+th2.start()
+th3.start()
