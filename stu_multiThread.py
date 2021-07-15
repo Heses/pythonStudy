@@ -30,7 +30,7 @@ class ThreadProgressBar():
 
 #함수 선언
 def runThreadProgress():
-    thBar1 = ThreadProgressBar(window)
+    thBar1 = ThreadProgressBar(window) #객체 생성
     thBar2 = ThreadProgressBar(window)
     thBar3 = ThreadProgressBar(window)
 
