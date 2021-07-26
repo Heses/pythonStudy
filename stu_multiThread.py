@@ -37,7 +37,7 @@ def runThreadProgress():
 
 #main code
 if __name__ == "__main__":
-    window=Tk()
+    window=Tk() #윈도우
     window.geometry("300x250")
     window.title('멀티스레드')
     threadButton=Button(window, text='멀티 스레드 시작', command=runThreadProgress)
