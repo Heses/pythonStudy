@@ -19,6 +19,7 @@ class RaceCar:
 car1=RaceCar('자동차1')
 car2=RaceCar('자동차2')
 car3=RaceCar('자동차3')
+car4=RaceCar('자동차4')
 
 th1=threading.Thread(target=car1.runcar)
 th2=threading.Thread(target=car2.runcar)
