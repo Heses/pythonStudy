@@ -20,7 +20,7 @@ while (True):
     data3 = input("이메일==> ")
     data4 = input("출생연도==> ")
 
-    sql="INSERT INTO userdb VALUES('"+data1+"','"+data2+"','"+data3+"',"+data4+")" #문자열을 ''로 묶음
+    sql="INSERT INTO userdb VALUES('"+data1+"','"+data2+"','"+data3+"',"+data4+")" #문자열을 ''로 묶음, 정수는 ""로만
     cur.execute(sql)
 
 con.commit()
